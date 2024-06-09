@@ -50,3 +50,32 @@ function mostrar_ocultar(valormo){
     }
 
 }
+function calcularsuma(){
+    var num1, num2;
+
+    num1=Number(document.getElementsByName("sum_num1")[0].value);
+    num2=document.getElementsByName("sum_num2")[0].value;
+    document.getElementsByName("sum_total")[0].value = num1 + Number(num2);
+}
+function calcularresta(){
+    var num1, num2;
+
+    num1=document.getElementById("numr1").value;
+    num2=document.getElementById("numr2").value;
+    document.getElementById("totalR").value = Number(num1) - Number(num2);
+}
+function calcularmultiplicacion(){
+    var num1, num2;
+
+    num1=document.getElementById("numm1").value;
+    num2=document.getElementById("numm2").value;
+    document.getElementById("totalM").value = Number(num1) * Number(num2);
+}
+function calculardivision(){
+    var num1, num2;
+
+    num1=document.getElementById("numd1").value;
+    num2=document.getElementById("numd2").value;
+    document.getElementById("totalD").value = Number(num1) / Number(num2);
+}
+
